@@ -1,0 +1,88 @@
+.hero h1 span,.hero .year span,.hero .caption-subtitle span, #about-us .caption-subtitle span, #our-products .caption-subtitle span, .attachment-card p{
+	opacity: 0;
+}
+span{
+	display: inline-block;
+}
+
+section.hero{
+	background-image: url(../images/background-coffee.jpg);
+	background-repeat:no-repeat;
+	height: 100vh;
+}
+@media (max-width: 1024px){
+	section.hero{
+		height:auto;
+		background-image: url(../images/img-01.jpg);
+	}
+	.hero .triangle, .hero .trame{
+		display: none;
+	}
+}
+
+.triangle, .trame{
+	position: absolute;
+}
+.hero .trame{
+	position: absolute;
+    width: 100%;
+    bottom: 0;
+    -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    background: rgba(255,255,255,1);
+    -webkit-transform-origin: bottom left;
+        -ms-transform-origin: bottom left;
+            transform-origin: bottom left;
+     z-index: 1;
+}
+.hero .triangle{
+	height: 100vh;
+    width: 100vh;
+    fill:none;
+    -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    -webkit-transform-origin: bottom left;
+        -ms-transform-origin: bottom left;
+            transform-origin: bottom left;
+    z-index: 2;
+}
+
+
+.advertising .trame{
+    width: 75%;
+    top: 0;
+    left: 71%;
+    -webkit-transform-origin: top left;
+        -ms-transform-origin: top left;
+            transform-origin: top left;
+    -webkit-transform: rotate(-50deg);
+        -ms-transform: rotate(-50deg);
+            transform: rotate(-50deg);
+    opacity: 0.5;
+    z-index: 100;
+}
+.advertising .triangle{
+	height: 30vw;
+    width: 30%;
+    fill: rgba(244, 197, 80,1);
+    top: -1px;
+    right: 0;
+    z-index: 2;
+}
+
+#our-products .trame{
+	opacity: 1;
+    width: 106vw;
+    max-width: 1000vw;
+    position: absolute;
+    top: -57vw;
+    left: -3vw;
+    -webkit-transform: rotate(-3deg);
+        -ms-transform: rotate(-3deg);
+            transform: rotate(-3deg);
+    -webkit-transform-origin: center;
+        -ms-transform-origin: center;
+            transform-origin: center;
+}

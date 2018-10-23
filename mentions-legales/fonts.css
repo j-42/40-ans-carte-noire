@@ -1,0 +1,63 @@
+@font-face {
+	font-family: 'Bambusa';
+	src: url('fonts/Bambusa Pro Bold.eot');
+	src: local('☺'), url('fonts/Bambusa Pro Bold.woff') format('woff'), url('fonts/Bambusa Pro Bold.ttf') format('truetype'), url('fonts/Bambusa Pro Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Circular';
+	src: url('fonts/lineto-circular-pro-bold.eot');
+	src: local('☺'), url('fonts/lineto-circular-pro-bold.woff') format('woff'), url('fonts/lineto-circular-pro-bold.ttf') format('truetype'), url('fonts/lineto-circular-pro-bold.svg') format('svg');
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Circular';
+	src: url('fonts/lineto-circular-pro-medium.eot');
+	src: local('☺'), url('fonts/lineto-circular-pro-medium.woff') format('woff'), url('fonts/lineto-circular-pro-medium.ttf') format('truetype'), url('fonts/lineto-circular-pro-medium.svg') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Circular';
+	src: url('fonts/lineto-circular-pro-book.eot');
+	src: local('☺'), url('fonts/lineto-circular-pro-book.woff') format('woff'), url('fonts/lineto-circular-pro-book.ttf') format('truetype'), url('fonts/lineto-circular-pro-book.svg') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+
+
+.bambusa
+{
+	font-family:'Bambusa',Sans-Serif;
+	font-weight: 600;
+}
+.circularbold
+{
+	font-family:'Circular',Sans-Serif;
+	font-weight: 600;
+}
+.circularmedium
+{
+	font-family:'Circular',Sans-Serif;
+	font-weight: 500;
+}
+.circularbook
+{
+	font-family:'Circular',Sans-Serif;
+	font-weight: 400;
+}
+
+
+
+
+
+
+
+body {
+	background-color:white;
+	color:black;
+	font-size:26px;
+}

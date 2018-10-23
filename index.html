@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Carte Noire</title>
+	 <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/css?family=Allura" rel="stylesheet">
+	<link media="all" rel="stylesheet" href="css/main.css">
+	<link media="all" rel="stylesheet" href="css/animations.css">
+	<script src="js/jquery-3.3.1.min.js" defer></script>
+	<script>
+	window.jQuery || document.write('<script src="js/jquery-3.3.1.min.js" defer><\/script>')
+	</script>
+	<script src="js/jquery.main.js" defer></script>
+
+
+	<script src="js/ScrollMagic.min.js" defer></script>
+	<script src="js/TweenMax.min.js" defer></script>
+	<script src="js/animation.gsap.js" defer></script>
+	<!-- should be removed when development is finished -->
+	<script src="js/temp/debug.addIndicators.js" defer></script>		
+	<script src="js/animations.js" defer></script>
+</head>
+
+<body>
+	<div id="wrapper" class="wrapper">
+		<header id="header" class="header">
+			<div class="container">
+				<a href="https://www.cartenoire.fr/" class="navbar-brand">
+					<img src="images/logo-01.png" alt="carte noire">
+				</a>
+				<nav class="nav">
+					<ul class="header-nav">
+						<li class="menu-head">
+							<a href="#">
+								<span class="menu-logo">
+									<span class="line"></span>
+								</span>
+								<span>Menu</span>
+							</a>
+							<ul class="navigation">
+								<li><a href="#characteristics">Notre savoir faire</a></li>
+								<li><a href="#revolution">La révolution arabica</a></li>
+								<li><a href="#advertising">La saga publicitaire</a></li>
+								<li><a href="#attachment-section">Le saviez-vous&nbsp;?</a></li>
+								<li><a href="#contact-us">Espace presse</a></li>
+							</ul>
+						</li>
+						<li><a href="#"><i class="icon-share"></i>Partager</a></li>
+						<li><a href="#"><i class="icon-download"></i>Télécharger</a></li>
+					</ul>
+				</nav>
+				<a href="#" class="hamburger hamburger--collapse hamburger--squeeze">
+				  <span class="hamburger-box">
+					<span class="hamburger-inner"></span>
+				  </span>
+				</a>
+			</div>
+		</header>
+		<main id="main">
+			<section class="hero">
+				<svg class="triangle" height="100" width="100" viewBox="0 0 100 100">
+				  <polygon points="0,100 0,90 80,0 100,60" />
+				</svg>
+				<img class="trame" src="sourceimages/trame.svg">
+				<img class="trame" src="sourceimages/trame.svg">
+
+				<div class="hero-holder">
+					<div class="container">
+						<div class="content">
+							<h1><span>Carte</span> <span>noire</span></h1>
+							<strong class="year"><span>40</span> <span>ans</span></strong>
+							<strong class="caption-subtitle md"><span>d’une</span> <span>marque</span> <span>iconique</span></strong>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="about-us" class="about-us">
+				<div class="container">
+					<div class="main-content">
+						<div class="content-holder">
+							<div class="caption-holder">
+								<strong class="caption-subtitle md"><span>On vous raconte tout</span></strong>
+							</div>
+							<div class="text-holder">
+								<p>Carte Noire fête ses 40 ans. 40 années marquées par la passion du café, 40 années durant lesquelles la marque n’a eu de cesse d’innover. </p>
+								<p>Faisant de la qualité son mot d’ordre, Carte Noire a toujours su anticiper et surtout répondre aux attentes des consommateurs en proposant une sélection de cafés de qualité, à la palette aromatique unique.
+									Carte Noire est une marque ancrée dans le quotidien des Français, qui sait se renouveler pour satisfaire les passionnés du café.</p>
+								<p>Café moulu, en grains, soluble, dosettes souples, capsules espresso… Carte Noire étend progressivement son expertise pour devenir aujourd’hui la première marque de café multi-segments du marché*.</p>
+								<span class="source">*Source «&nbsp;Nielsen ScanTrack P9 2018&nbsp;».</span>
+							</div>
+						</div>
+						<div class="quote-content">
+							<blockquote class="quote">
+								<q class="quote-text">&nbsp;Chez Carte Noire nous sommes des créateurs de café. Le café nous passionne, il nous inspire. Avec l’entrée au sein du Groupe Lavazza, Carte Noire est devenue plus qu’une marque, un vrai projet industriel et humain, avec une âme entrepreneuriale et une personnalité&nbsp;: un nouveau
+									Carte Noire.&nbsp;</q>
+								<strong class="quote-autor">Vincent Flouquet</strong>
+								<strong class="position-autor">Directeur Général Carte Noire SAS</strong>
+							</blockquote>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="characteristics" class="characteristics">
+				<div class="container">
+					<div class="about-card-list">
+						<div class="about-card">
+							<div class="holder">
+								<div class="image-holder">
+									<img src="images/img-03.jpg" alt="Fabrication française">
+								</div>
+								<h3>Une fabrication française</h3>
+								<a href="#popup-production" class="btn btn-sm lightbox">Découvrir</a>
+							</div>
+						</div>
+						<div class="about-card">
+							<div class="holder">
+								<div class="image-holder">
+									<img src="images/img-04.jpg" alt="Un café durable">
+								</div>
+									<h3>Une gamme de café bio et durable</h3>
+								<a href="#popup-coffee" class="btn btn-sm lightbox">Découvrir</a>
+							</div>
+						</div>
+						<div class="about-card">
+							<div class="holder">
+								<div class="image-holder">
+									<img src="images/img-05.jpg" alt="Des passionnés du café">
+								</div>
+								<h3>Des passionnés du café</h3>
+								<a href="#popup-coffee-lovers" class="btn btn-sm lightbox">Découvrir</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="our-products" class="our-products">
+				<img class="trame" src="sourceimages/trameorange.svg">
+				<div class="container">
+					<div class="caption-holder">
+						<h2>la révolution arabica</h2>
+						<strong class="caption-subtitle sm"><span>Carte Noire &nbsp;:</span> <span>Classique,</span> <span>impertinente,</span> <span>indémodable</span></strong>
+						<div  id="revolution" class="text-holder">
+							<p>La marque de café Carte Noire voit le jour en 1978. Son créateur, René Monnier, grand amateur de café, a fait le choix de redonner à l’arabica ses lettres de noblesse, avec audace et créativité. Refusant la dégradation de la qualité du café qui fait suite à une hausse des cours du café en 1976, il lance un produit différent&nbsp;: un café haut de gamme, pur arabica, vendu plus cher que la concurrence. Il va alors façonner le goût unique et intense de Carte Noire à base d’arabicas d’Amérique latine et notamment du Brésil.</p>
+						</div><span ></span>
+						<a href="#popup-revolution-arabica" class="btn btn-sm black hover-yellow lightbox">Découvrir</a>
+					</div>
+				</div>
+					<div class="product-card-list">
+						<div class="container">
+							<div class="product-carousel">
+								<div class="product-card">
+									<div class="holder">
+										<div class="image-holder">
+											<img src="images/1978.png" alt="CARTE NOIRE">
+										</div>
+										<div class="overlay-description">
+											<div class="overlay-holder">
+												<span class="info">René Monnier crée le 1er café moulu Carte Noire, 100&nbsp;% arabica, à l’arôme intense et au goût unique.</span>
+											</div>
+										</div>
+									</div>
+									<span class="product-year">1978</span>
+								</div>
+
+								<div class="product-card">
+									<div class="holder">
+										<div class="image-holder">
+											<img src="images/1992.png" alt="CARTE NOIRE">
+										</div>
+										<div class="overlay-description">
+											<div class="overlay-holder">
+												<span class="info">Carte Noire se décline pour satisfaire toutes les envies à tout moment de la journée avec Carte Noire Infini, le premier café décaféiné premium.</span>
+											</div>
+										</div>
+									</div>
+									<span class="product-year">1992</span>
+								</div>
+
+								<div class="product-card">
+									<div class="holder">
+										<div class="image-holder">
+											<img src="images/1993.png" alt="CARTE NOIRE">
+										</div>
+										<div class="overlay-description">
+											<div class="overlay-holder">
+												<span class="info">La marque lance le café soluble 100&nbsp;% arabica avec «&nbsp;CARTE NOIRE Instinct&nbsp;». La même année, CARTE NOIRE lance les premières dosettes individuelles expresso pour percolateur.</span>
+											</div>
+										</div>
+									</div>
+									<span class="product-year">1993</span>
+								</div>
+
+
+								<div class="product-card">
+									<div class="holder">
+										<div class="image-holder">
+											<img src="images/2001.png" alt="CARTE NOIRE">
+										</div>
+										<div class="overlay-description">
+											<div class="overlay-holder">
+												<span class="info">Carte Noire lance le premier stick de café soluble.</span>
+											</div>
+										</div>
+									</div>
+									<span class="product-year">2001</span>
+								</div>
+								<div class="product-card">
+									<div class="holder">
+										<div class="image-holder">
+											<img src="images/2003.png" alt="CARTE NOIRE">
+										</div>
+										<div class="overlay-description">
+											<div class="overlay-holder">
+												<span class="info">Carte Noire offre aux consommateurs des dosettes souples.</span>
+											</div>
+										</div>
+									</div>
+									<span class="product-year">2003</span>
+								</div>
+
+								<div class="product-card">
+									<div class="holder">
+										<div class="image-holder">
+											<img src="images/2013.png" alt="CARTE NOIRE">
+										</div>
+										<div class="overlay-description">
+											<div class="overlay-holder">
+												<span class="info">Carte Noire se lance sur le segment des capsules compatibles Nespresso<sup>&#174;</sup>**.</span>
+											</div>
+										</div>
+									</div>
+									<span class="product-year">2013</span>
+								</div>
+								<div class="product-card">
+									<div class="holder">
+										<div class="image-holder">
+											<img src="images/2016.png" alt="CARTE NOIRE">
+										</div>
+										<div class="overlay-description">
+											<div class="overlay-holder">
+												<span class="info">Carte Noire relance sa gamme de capsules compatibles Nespresso<sup>&#174;</sup>**&nbsp;: des recettes retravaillées avec l’expertise de la R&#38;D Lavazza pour proposer une qualité café irrésistible, accompagnée d’un nouveau design résolument moderne et tendance. Le passage aux capsules hermétiques colorées permet d’avoir un packaging plus compact (la taille est divisée par 3, et les pochons plastiques qui emballaient les capsules sont supprimés), qui assure une meilleure préservation des arômes pour une plus grande qualité en tasse. </span>
+											</div>
+										</div>
+									</div>
+									<span class="product-year">2016</span>
+								</div>
+								<div class="product-card">
+									<div class="holder">
+										<div class="image-holder">
+											<img src="images/2017.png" alt="CARTE NOIRE">
+										</div>
+										<div class="overlay-description">
+											<div class="overlay-holder">
+												<span class="info">Carte Noire lance ses premières références BIO, labellisées AB et certifiées UTZ.</span>
+											</div>
+										</div>
+									</div>
+									<span class="product-year">2017</span>
+								</div>
+								<div class="product-card">
+									<div class="holder">
+										<div class="image-holder">
+											<img src="images/2018.png" alt="CARTE NOIRE">
+										</div>
+										<div class="overlay-description">
+											<div class="overlay-holder">
+												<span class="info">Carte Noire est désormais présent sur tous les segments du café grâce aux capsules compatibles Nescafé<sup>&#174;</sup>Dolce Gusto<sup>&#174;</sup>*** et au relancement de sa gamme de café soluble.</span>
+											</div>
+										</div>
+									</div>
+									<span class="product-year">2018</span>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				<div class="container">
+					<span class="source">**Nespresso<sup>&#174;</sup> est une marque d’un tiers n’ayant aucun lien avec le groupe Luigi Lavazza S.p.A.</span>
+					<span class="source">*** Nescafé<sup>&#174;</sup> et Dolce Gusto<sup>&#174;</sup> sont des marques d’un tiers n’ayant aucun lien avec le groupe Luigi Lavazza S.p.A.</span>
+				</div>
+			</section>
+			<section id="advertising" class="advertising">
+
+				<svg class="triangle" height="100" width="100" viewBox="0 0 100 100">
+				  <polygon id="trianglemorph1" points="0,0 15,0 74,60"></polygon>
+				</svg>
+
+				<img class="trame" src="sourceimages/trame.svg">
+
+				<div class="container">
+					<div class="main-content">
+						<div class="content-holder">
+							<div class="caption-holder">
+								<h2>une saga publicitaire</h2>
+								<strong class="caption-subtitle lg"><span>Enivrante</span></strong>
+							</div>
+							<div class="text-holder">
+								<p>Carte Noire a su créer une expérience de marque unique en imaginant au fil des années une saga publicitaire qui a marqué l’esprit des Français. </p>
+								<p>Cassant les codes habituels de la communication du café, Carte Noire a forgé des liens très forts avec l’univers du cinéma, à travers sa saga publicitaire.</p>
+								<a href="#popup-saga" class="btn btn-md white hover-yellow lightbox">Découvrir la saga</a>
+							</div>
+						</div>
+					</div>
+					<div class="advertising-list-video">
+						<div class="video-item">
+							<a href="#popup-video-1" class="video lightbox">
+								<img src="images/img-18.jpg" alt="image description">
+							</a>
+						</div>
+						<div class="video-item">
+							<a href="#popup-video-2" class="video lightbox">
+								<img src="images/img-19.jpg" alt="image description">
+							</a>
+						</div>
+						<div class="video-item">
+							<a href="#popup-video-3" class="video lightbox">
+								<img src="images/img-20.jpg" alt="image description">
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="attachment-section" class="attachment-section">
+				<div class="container">
+					<div class="caption-holder">
+						<h2>le saviez vous&nbsp;?</h2>
+						<strong class="caption-subtitle"></strong>
+					</div>
+					<div class="attachment-list-card">
+						<div class="attachment-card">
+							<div class="holder bg-yellow">
+								<div class="image-holder">
+									<img src="images/img-015.png" alt="image description">
+								</div>
+								<strong class="count ceil" data-delay="300" data-speed="600"  data-number="6">0</strong>
+								<p data-delay="900">C'est le nombre de variétés de grains qui composent le Carte Noire Classique.</p>
+							</div>
+						</div>
+						<div class="attachment-card">
+							<div class="holder bg-red">
+								<div class="image-holder">
+									<img src="images/img-016.png" alt="image description">
+								</div>
+								<strong class="count ceil" data-delay="900" data-speed="800"  data-number="1000">0</strong>
+								<p data-delay="1700">C'est le nombre de composé aromatiques contenus dans chaque grain.</p>
+							</div>
+						</div>
+						<div class="attachment-card">
+							<div class="holder bg-blue">
+								<div class="image-holder">
+									<img src="images/img-017.png" alt="image description">
+								</div>
+								<strong class="count ceil" data-delay="1700"  data-speed="800" data-number="30">0</strong>
+								<p data-delay="2500">Toutes les 30 min, des prélèvements sont effectués à l’usine pour tester la qualité du café</p>
+							</div>
+						</div>
+					</div>
+					<a href="#popup-infographie" class="btn btn-lg black hover-yellow lightbox popup-infographie">Découvrir l’infographie</a>
+				</div>
+			</section>
+			<section id="info-section" class="info-section">
+				<div class="container">
+					<div class="main-content">
+						<div class="content-holder">
+							<div class="caption-holder">
+								<div class="caption-subtitle">
+									<h3><span>Créer, partager</span></h3>
+								</div>
+							</div>
+							<div class="text-holder">
+								<p>À l’instar de la relation unique et de la connivence que la marque a su créer avec les Français, Carte Noire a décidé, à l’occasion de ses 40 ans d’aller plus loin. Ainsi, elle réserve à ses fidèles une surprise… leur permettant de se retrouver à Paris… à suivre au début de l’année prochaine… </p>
+								<p>Le goût unique, l’arôme intense, la qualité constante depuis plus de 40 ans, la saga publicitaire de Carte Noire, ont façonné un territoire de marque&nbsp;: les consommateurs sont autant attachés à la qualité du produit qu’ils le sont à leur marque. </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="contact-us" class="contact-us">
+				<div class="container">
+					<div class="press-kit">
+						<div class="caption-holder">
+							<h6>accédez aux éléments du dossier de presse</h6>
+						</div>
+						<div class="contact-holder">
+							<a href="https://fr.zone-secure.net/107708/899708/" class="btn btn-lg white hover-yellow" target="_blank">tous les visuels</a>
+							<a href="https://fr.zone-secure.net/107708/910274/" class="btn btn-lg white hover-yellow" target="_blank">toutes les vidéos</a>
+						</div>
+					</div>
+					<div class="contact">
+						<div class="caption-holder">
+							<h6>Contact presse</h6>
+						</div>
+						<div class="contact-holder">
+							<div class="persons">
+								<strong class="contact-person">Burson Cohn & Wolfe</strong>
+								<strong class="contact-person">Hélène Boyer</strong>
+							</div>
+							<ul class="contact-links">
+								<li>
+									<i class="icon-mail"></i>
+									<a href="mailto:&#104;&#101;&#108;&#101;&#110;&#101;&#046;&#098;&#111;&#121;&#101;&#114;&#064;&#098;&#109;&#046;&#099;&#111;&#109;">&#104;&#101;&#108;&#101;&#110;&#101;&#046;&#098;&#111;&#121;&#101;&#114;&#064;&#098;&#109;&#046;&#099;&#111;&#109;</a>
+								</li>
+								<li>
+									<i class="icon-phone"></i>
+									<a href="tel:+33(0)156031452">+33 (0)1 56 03 14 52</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="popups-holder">
+				<div id="popup-production" class="popup-section popup-production">
+					<div class="container">
+						<div class="caption-holder">
+							<h3>Une fabrication française</h3>
+							<strong class="caption-subtitle lg">De qualité</strong>
+						</div>
+						<div class="popup-carousel">
+							<div class="item">
+								<div class="image" style="background-image: url(images/fabrication1.jpg)"></div>
+							</div>
+							<div class="item">
+								<div class="image" style="background-image: url(images/passione1.jpg)"></div>
+							</div>
+							<div class="item">
+								<div class="image" style="background-image: url(images/durable3.jpg)"></div>
+							</div>
+							<div class=
+							<div class="item">
+								<div class="image" style="background-image: url(images/fabrication2.jpg)"></div>
+							</div>
+							<div class="item">
+								<div class="image" style="background-image: url(images/fabrication3.jpg)"></div>
+							</div>
+						</div>
+						<div class="popup-content">
+							<p>Depuis 1969, le paquet de café géant Carte Noire, pilier de l’usine de Lavérune dans l’Hérault (34), est devenu le symbole du savoir-faire industriel de la marque. C’est dans ce territoire dynamique proche de Montpellier que l’usine fabrique et torréfie les cafés Carte Noire. Chaque année, 27 000 tonnes de café sont produites en utilisant des méthodes de haute précision technologique. Les experts Carte Noire goûtent et contrôlent la qualité de chaque lot de café, torréfient et conditionnent l’ensemble des produits. C’est cet ancrage qui donne aussi à Carte Noire son caractère unique, à la française.</p>
+							<p>Souhaitant perpétuer cette tradition et incarner plus que jamais l’essence d’un café Made in France, Lavazza a investi 23 millions d’euros pour moderniser et optimiser la capacité de production de l’usine depuis 2016. Ces investissements ont notamment permis l’installation d'une nouvelle ligne de dosettes souples au rendement élevé, ou encore l’optimisation d’une ligne existante de capsules compatibles Nespresso<sup>&#174;</sup>*. Un nouveau torréfacteur tangentiel à la technologie innovante a été installé, permettant la torréfaction de différents cafés verts et répondant ainsi aux différentes exigences des consommateurs. </p>
+							<p>Grâce à son expertise en matière de torréfaction, d’assemblage et de mouture, les équipes Carte Noire transforment le café vert (principalement de l’arabica du Brésil, Honduras et Colombie) en cafés aux arômes, saveurs et niveaux d’intensité distincts pour satisfaire tous les goûts, pour tous les moments de consommation. </p>
+							<p>Aujourd’hui l’usine de Lavérune compte 9 lignes de production et 9 appareils de torréfaction et concentre toutes les activités de production Carte Noire.</p>
+							<span class="source">*Nespresso<sup>&#174;</sup>est une marque d’un tiers n’ayant aucun lien avec le groupe Luigi Lavazza S.p.A.</span>
+						</div>
+						
+					</div>
+				</div>
+				<div id="popup-coffee" class="popup-section popup-coffee">
+					<div class="container">
+						<div class="caption-holder">
+							<h3>Une gamme de café</h3>
+							<strong class="caption-subtitle lg">Bio et Durable</strong>
+						</div>
+						<div class="popup-carousel">
+							<div class="item">
+								<div class="image" style="background-image: url(images/durable1.jpg)"></div>
+							</div>
+							<div class="item">
+								<div class="image" style="background-image: url(images/durable2.jpg)"></div>
+							</div>
+							<div class="item">
+								<div class="image" style="background-image: url(images/durable3.jpg)"></div>
+							</div>
+						</div>
+						<div class="popup-content">
+							<p>Carte Noire, et l’ensemble de ses collaborateurs sont convaincus que la création d’un avenir meilleur pour les générations futures ne sera possible qu’à travers des activités durables et des produits de haute qualité. L’entreprise souhaite ainsi contribuer à la création d’un modèle qui réconcilie les intérêts des producteurs de café et ceux des consommateurs, tout en mettant en avant l’innovation. </p>
+							<p>En 2017, Carte Noire a fait ses premiers pas dans l’univers du bio pour satisfaire les amateurs de café en quête d’alimentation saine, en commercialisant trois références. Et depuis septembre 2018, la gamme s’est étendue à l’ensemble des segments. Dorénavant Carte Noire est la seule marque de café à proposer une gamme bio complète.</p>
+							<p>Carte Noire est la première marque à proposer aux consommateurs des références BIO sur tous les segments du café (café moulu, café en grains, café soluble, dosettes souples, capsules compatibles Nespresso<sup>®**</sup>, capsules compatibles Nescafé<sup>®</sup> Dolce Gusto<sup>®***</sup>)</p>
+							<p>Avec cette gamme, Carte Noire fait le choix d’une démarche responsable. La sélection des grains respecte les normes de l’Union Européenne sur l’agriculture biologique, certifiées par le logo 
+							«&nbsp;Eurofeuille&nbsp;» et la marque s’engage aussi à s'approvisionner pour cette gamme en grains verts ayant obtenu les normes de durabilité certifiées par le label UTZ. </p>
+						</div>
+						<div class="container">
+							<span class="source">**Nespresso<sup>®</sup> est une marque d’un tiers n’ayant aucun lien avec le groupe Luigi Lavazza S.p.A.</span>
+							<span class="source">*** Nescafé<sup>®</sup> et Dolce Gusto<sup>®</sup> sont des marques d’un tiers n’ayant aucun lien avec le groupe Luigi Lavazza S.p.A.</span>
+						</div>
+					</div>
+				</div>
+				<div id="popup-coffee-lovers" class="popup-section popup-coffee-lovers">
+					<div class="container">
+						<div class="caption-holder">
+							<h3>des passionnés</h3>
+							<strong class="caption-subtitle lg">Du café</strong>
+						</div>
+						<div class="popup-carousel">
+							
+							<div class="item">
+								<div class="image" style="background-image: url(images/passione2.jpg)"></div>
+							</div>
+							<div class="item">
+								<div class="image" style="background-image: url(images/passione3.jpg)"></div>
+							</div>
+							<div class="item">
+								<div class="image" style="background-image: url(images/passione4.jpg)"></div>
+							</div>
+						</div>
+						<div class="popup-content">
+							<p>Dans un univers professionnel en mutation, Carte Noire, une entreprise à taille humaine, a su créer un environnement de travail au sein duquel ses collaborateurs se sentent bien, leur permettant ainsi d’exprimer leurs talents et leur personnalité.</p>
+							<p>Carte Noire compte actuellement 350 collaborateurs répartis entre deux entités autonomes &nbsp;:
+							un site de production à Lavérune et le siège à Boulogne-Billancourt, dans les Hauts-de-Seine (92). 
+							Car, au-delà des produits, Carte Noire est devenue une entreprise à part entière depuis son entrée 
+							au sein du Groupe Lavazza en mars 2016. A travers sa signature d’entreprise, forte et engageante, 
+							«&nbsp;Carte Noire, Revealing colorful people&nbsp;», Carte Noire valorise à la fois l’état d’esprit unique et ouvert de l’entreprise mais aussi la diversité des profils recherchés.</p>
+							<p>Elle incite ses collaborateurs, présents et futurs, à laisser libre cours à leur créativité pour positionner Carte Noire comme un acteur majeur dans l’univers des biens de grande consommation.</p>
+						</div>
+					</div>
+				</div>
+				<div id="popup-revolution-arabica" class="popup-section popup-revolution-arabica">
+					<div class="container">
+						<div class="caption-holder">
+							<h3>la révolution arabica</h3>
+							<strong class="caption-subtitle xs">Carte Noire &nbsp;: Classique, impertinente, indémodable </strong>
+						</div>
+						<div class="popup-carousel">
+							<div class="item">
+								<div class="image" style="background-image: url(images/revolution.jpg)"></div>
+							</div>
+							<div class="item">
+								<div class="image" style="background-image: url(images/fabrication2.jpg)"></div>
+							</div>
+						
+						</div>
+						<div class="popup-content">
+							<div class="col-holder">
+								<div class="col">
+									<p>La marque de café Carte Noire voit le jour en 1978. Son créateur, René Monnier, grand amateur de café, a fait le choix de redonner à l’arabica ses lettres de noblesse, avec audace et créativité. Refusant la dégradation de la qualité du café qui fait suite à une hausse des cours du café en 1976, il lance un produit différent&nbsp;: un café haut de gamme, pur arabica, vendu plus cher que la concurrence.</p>
+									<p>Il va alors façonner le goût unique et intense de Carte Noire à base d’arabicas d’Amérique latine et notamment du Brésil.</p>
+									<p>En visionnaire, il innove en matière de packaging&nbsp;: le café Carte Noire se vend dans un emballage sous vide souple. D’un point de vue marketing, il adopte les codes traditionnels du luxe et du parfum à la française&nbsp;: avec ses couleurs noir, blanc et or.</p> 
+									<p>Il y fera inscrire “Premier grand cru, pur arabica”, ce qui renforce la notion de très haute qualité.</p>
+								</div>
+								<div class="col">
+									
+									<p>Pour garantir sa fraîcheur le paquet, totalement hermétique, bénéficie d’une valve d’où le gaz naturel produit après la torréfaction peut s’échapper. Les lauriers triomphaux soulignent encore aujourd’hui l’originalité fondatrice de cette innovation et le savoir-faire français.</p>
+									<p>Carte Noire, c’est aussi un procédé de torréfaction unique, à la précision horlogère, qui associe différents modes de torréfaction, à la fois rapide et lente, à des niveaux de température et d’humidité variables. Un véritable tourbillon d’air chaud précipite les grains de cafés torréfiés à froid, garantissant une fixation naturelle des arômes.</p>
+								</div>
+							</div>
+							<div class="image-holder">
+								<img src="images/img-26.jpg" alt="image description">
+							</div>
+							<div class="col-holder">
+								<div class="col">
+									<p>Depuis 40 ans, Carte Noire propose des cafés de qualité en se renouvelant sans cesse et en plaçant l’innovation au cœur de la stratégie de l’entreprise. Pionnier du segment 100&nbsp;% arabica à la fin des années 70, Carte Noire a toujours eu à cœur d’offrir la meilleure qualité café sur le marché français, quel que soit la façon de préparer son café &nbsp;: en grains, en torréfié, en dosettes souples, en capsules compatibles.</p>
+								</div>
+								<div class="col">
+									<p>C’est cette exigence qui pousse la marque à toujours repenser son offre&nbsp;: des recettes retravaillées avec l’expertise de la R&#38;D Lavazza Groupe, pour atteindre une qualité café exceptionnelle à chaque instant.</p>
+									<p>Carte Noire propose plus de 50 produits différents pour répondre à toutes les attentes et modes de préparation et 800 principes aromatiques sont présents dans ses cafés avec une constance en goût quel que soit le dosage.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="popup-saga" class="popup-section popup-saga">
+					<div class="container">
+						<div class="caption-holder">
+							<h3>Une saga publicitaire</h3>
+							<strong class="caption-subtitle lg"><span>Enivrante</span></strong>
+						</div>
+						<div class="popup-content">
+							<div class="col-holder">
+								<div class="col">
+									<p>Carte Noire a su créer une expérience de marque unique en imaginant au fil des années une saga publicitaire qui a marqué l’esprit des Français. Cassant les codes habituels de la communication du café, Carte Noire a forgé des liens très forts avec l’univers du cinéma, à travers sa saga publicitaire. Chaque film a été imaginé comme un court moment de cinéma, la marque faisant souvent appel à des réalisateurs de renom (Jalil Lespert, Valérie Donzelli) ainsi qu’à de célèbres actrices à l’instar de Rossy De Palma en 2017. Partenaire officiel du Festival de Cannes en 1993 et 1994, la marque a aussi parrainé plusieurs prix cinématographiques et est le partenaire de tous les moments cinéma de Canal +. Les spots sont centrés sur l’imagination, le rêve et la sensualité tout en restant au service du produit, de l’arôme intense, de la qualité unique.</p>
+									<p>Le cinéma, comme le café, a une dimension d’intensité. A chaque tasse, pour chaque film, c’est la découverte, l’intensité des émotions, la surprise. L’exigence de la qualité et le souci du détail sont des valeurs communes aux deux univers.</p>
+									<p>Du premier spot TV de 1983, déjà inspiré d’un film d’Hitchcock, aux dernières campagnes, la marque exprime son potentiel émotionnel avec une puissance cinématographique conférant des dimensions presque magiques au produit.</p>
+									<div class="quote-content-video quote2">
+										<blockquote class="quote">
+											<q class="quote-text">&nbsp;Un café nommé Désir&nbsp;</q>
+										</blockquote>
+									</div>
+									<p>Le slogan historique fait référence au livre de Tennessee William «&nbsp;Un tramway nommé désir&nbsp;» ainsi qu’à sa célèbre adaptation cinématographique par Elia Kazan et une chanson iconique d’Harry Balafonte “Try to remember”.</p>
+								</div>
+								<div class="col">
+									<p>En 2016, Carte Noire dévoile une nouvelle signature &nbsp;: Les plus belles couleurs du noir qui prend tout son sens dans une campagne TV rupturiste, «&nbsp;Nouvelle Collection Expresso&nbsp;», qui ouvre une nouvelle page dans l’histoire de Carte Noire. Une nouvelle saga, qui bouscule les codes traditionnels de la marque, ayant pour objectif d’emmener Carte Noire vers plus de modernité.</p>
+									<p>Dans la lignée de «&nbsp;Nouvelle Collection Espresso&nbsp;», la marque poursuit son incursion décalée dans l’univers de la mode. Qui de plus légitime que Jalil Lespert, réalisateur passionné par l’univers de la mode, pour mettre en images la nouvelle saga Carte Noire&nbsp;? Dès son arrivée sur le projet, Jalil Lespert a tout de suite manifesté son envie de travailler avec Rossy de Palma, icône du 7e art et modeuse extravertie. Entre le réalisateur et l’actrice, l’alchimie a tout de suite fonctionné. Leurs deux personnalités complémentaires ont permis de détourner les codes de la mode avec humour pour continuer de creuser le sillon du nouveau territoire d’expression de Carte Noire &nbsp;: un univers mode en pleine effervescence, où le «&nbsp;moment café&nbsp;» est un incontournable.</p>
+									<p>En 2018, la marque met en avant la variété de son offre, multi-segments, à travers des films courts, colorés, recentrés sur les produits. Ils valorisent la sensorialité produit, le savoir-faire français et la qualité du café Carte Noire.Et demain les prochaines campagnes Carte Noire intégreront plus de sensorialité à travers des moments de dégustation sublimés, une narrative tournée autour du plaisir et de la convivialité tout en assumant son savoir-faire français.</p>
+								</div>
+							</div>
+						</div>
+						<div class="quote-content-video">
+							<blockquote class="quote">
+								<q class="quote-text">&nbsp; Carte Noire a souhaité en 2016 saisir l’opportunité du relancement de ses capsules compatibles Nespresso pour se réinventer en communication, sur un marché du café qui s’est beaucoup transformé ces dernières années. Pour annoncer de façon évènementielle l’arrivée de sa nouvelle Collection Espresso,  au design coloré, nous avons détourné avec humour les codes de la mode&nbsp;: les fashionistas amoureux du café s’arrachent cette nouvelle collection dès son arrivée en magasins. Nous voulions montrer la modernité de la marque mais surtout toute la passion de Carte Noire pour la qualité café. C’est le sens de la plateforme de marque «&nbsp;Les plus belles couleurs du noir&nbsp;». Carte Noire révèle toutes les richesses du café, révèle les plus belles couleurs du noir.&nbsp;</q>
+								<strong class="quote-autor">Anne-Isabelle Cerles</strong>
+								<strong class="position-autor">Directrice Générale BETC</strong>
+							</blockquote>
+						</div>
+						 <div class="popup-carousel video-carousel">
+							<div class="item">
+								<video poster="images/img-18.jpg" controls="controls" preload="none">
+									<source src="video/video-1.mp4" type="video/mp4">
+									<source src="video.webm" type="video/webm">
+									<source src="video.ogv" type="video/ogg">
+									<object data="video.swf" type="application/x-shockwave-flash">
+										<param name="movie" value="video.swf">
+									</object>
+								</video>
+								<div class="caption-holder bottom">
+									<h6></h6>
+									<strong class="caption-subtitle md">L’Aéroport</strong>
+									<div class="text-holder">
+										<p>L’Aéroport (2006) avec Olga Kurylenko et Andres Segura, met en scène un couple qui tournoie dans les airs, à l’instar de l’arôme du café qui se dégage de leurs deux tasses, restées sur le comptoir du bar de l’aéroport. La sensorialité est au cœur de la publicité de Carte Noire.</p>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<video poster="images/img-19.jpg" controls="controls" preload="none">
+									<source src="video/papesse.mov" type="video/mp4">
+									<source src="video.webm" type="video/webm">
+									<source src="video.ogv" type="video/ogg">
+									<object data="video.swf" type="application/x-shockwave-flash">
+										<param name="movie" value="video.swf">
+									</object>
+								</video>
+								<div class="caption-holder bottom">
+									<h6></h6>
+									<strong class="caption-subtitle md">Nouvelle Collection Expresso</strong>
+									<div class="text-holder">
+										<p>Une campagne TV déclinée en 3 formats (1min, 30s et 20s), où la marque joue avec humour sur les codes de la mode, pour mettre en avant la désirabilité du produit. Réalisé par Ivan Gbovic, le film principal met en scène des fashionistas prêts à tout pour obtenir les nouvelles capsules espresso Carte Noire.</p>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<video poster="images/img-20.jpg" controls="controls" preload="none">
+									<source src="video/aeroport.mp4" type="video/mp4">
+									<source src="video.webm" type="video/webm">
+									<source src="video.ogv" type="video/ogg">
+									<object data="video.swf" type="application/x-shockwave-flash">
+										<param name="movie" value="video.swf">
+									</object>
+								</video>
+								<div class="caption-holder bottom">
+									<h6></h6>
+									<strong class="caption-subtitle md">Fashionista</strong>
+									<div class="text-holder">
+										<p>En 2017, la marque poursuit son incursion décalée dans l’univers de la mode. Qui de plus légitime que Jalil Lespert, réalisateur passionné par l’univers de la mode, pour mettre en images la nouvelle saga Carte Noire&nbsp;? Dès son arrivée sur le projet, Jalil Lespert a tout de suite manifesté son envie de travailler avec Rossy de Palma, icône du 7e art et modeuse extravertie pour continuer de creuser le sillon du nouveau territoire d’expression de Carte Noire&nbsp;: un univers mode en pleine effervescence, où le «&nbsp;moment café&nbsp;» est un incontournable.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				<div id="popup-infographie" class="popup-section popup-infographie">
+					<div class="container">
+						<div class="image-holder">
+							<img src="images/infographie.jpg" alt="infographie">
+						</div>
+					</div>
+				</div>
+				<div id="popup-video-1" class="popup-video">
+					<div class="item">
+						<video poster="images/img-18.jpg" controls="controls" preload="none">
+							<source src="video/aeroport.mp4" type="video/mp4">
+						</video>
+					</div>
+				</div>
+				<div id="popup-video-2" class="popup-video">
+					<div class="item">
+						<video poster="images/img-19.jpg" controls="controls" preload="none">
+							<source src="video/papesse.mov" type="video/mp4">
+						</video>
+					</div>
+				</div>
+				<div id="popup-video-3" class="popup-video">
+					<div class="item">
+						<video  poster="images/img-20.jpg" controls="controls" preload="none">
+							<source src="video/video-3.mp4" type="video/mp4">
+						</video>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer id="footer" class="footer">
+			<div class="container">
+				<a href="https://www.cartenoire.fr/" class="navbar-brand">
+					<img src="images/logo-02.png" alt="carte noire">
+				</a>
+				<div class="footer-content">
+					<div class="top">
+						<div class="caption">
+							<a href="mentions-legales/index.html" target="_blank" class="h6">Mentions légales</a>
+						</div>
+						<ul class="social">
+							<li><a href="https://www.facebook.com/cartenoire" target="_blank"><i class="icon-facebook"></i></a></li>
+							<li><a href="https://www.instagram.com/cartenoirefr/?hl=fr" target="_blank"><i class="icon-instagram"></i></a></li>
+						</ul>
+					</div>
+					<span class="copyright">2018 © CARTE NOIRE - Tous droits réservés</span>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>

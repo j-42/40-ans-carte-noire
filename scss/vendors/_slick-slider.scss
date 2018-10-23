@@ -1,0 +1,181 @@
+$background-color-active-dot:#000;
+$background-color-dot: #fff;
+$border-color-dot:#000;
+$background-color-hover-dot:#000;
+$background--border-color-hover-dot:#000;
+
+
+.product-carousel,
+.popup-carousel {
+	position: relative;
+	display: block;
+	box-sizing: border-box;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-ms-touch-action: pan-y;
+	touch-action: pan-y;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	&:focus {
+		outline: none;
+	}
+	&.dragging {
+		cursor: pointer;
+	}
+}
+
+.popup-carousel .slick-track,
+.popup-carousel .slick-list,
+.product-carousel .slick-track,
+.product-carousel .slick-list {
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	-ms-transform: translate3d(0, 0, 0);
+	-o-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+	position: relative;
+	left: 0;
+	top: 0;
+	display: block;
+	margin-bottom: 10px;
+	&:before,
+	&:after {
+		content: "";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+	.slick-loading & {
+		visibility: hidden;
+	}
+}
+
+.slick-slide {
+	float: left;
+	height: 100%;
+	min-height: 1px;
+	display: none;
+	[dir="rtl"] & {
+		float: right;
+	}
+	img {
+		display: block;
+	}
+	&.slick-loading img {
+		display: none;
+	}
+	&.dragging img {
+		pointer-events: none;
+	}
+	.slick-initialized & {
+		display: block;
+	}
+	.slick-loading & {
+		visibility: hidden;
+	}
+	.slick-vertical & {
+		display: block;
+		height: auto;
+		border: 1px solid transparent;
+	}
+}
+
+.slick-arrow.slick-hidden {
+	display: none;
+}
+
+.slick-arrow{
+	text-decoration: none;
+	color: #000;
+	width: 50px;
+	height: 50px;
+	border: 1px solid #000;
+	border-radius: 50%;
+	display: flex;
+	align-items:center;
+	justify-content:center;
+	position: absolute;
+	.icon-left,
+	.icon-right{
+		font-size: 26px;
+		line-height: 1;
+	}
+}
+
+.slick-prev{
+	left: 0;
+}
+
+.slick-next{
+	right: 0;
+}
+
+.popup-carousel{
+	margin-bottom: 76px;
+	.slick-arrow{
+		bottom: 35%;
+	}
+}
+
+.slick-dots {
+	position: absolute;
+    bottom: 35%;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%,93%);
+	max-width: 200px;
+	width: 100%;
+	margin: 0 auto;
+	top: 26px;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	padding-left: 0;
+	.slick-active {
+		background-color: $background-color-active-dot;
+	}
+	li {
+		margin: 5px;
+		width: 10px;
+		height: 10px;
+		opacity: 0.9;
+		border-radius: 50%;
+		cursor: pointer;
+		list-style-type: none;
+		border: 2px solid $border-color-dot;
+		background-color: $background-color-dot;
+		&:first-child {
+			margin-left: 0;
+		}
+		&:last-child{
+			margin-right: 0;
+		}
+		&:hover {
+			background-color: $background-color-hover-dot;
+			border: 2px solid $background--border-color-hover-dot;
+		}
+		button {
+			display: none;
+		}
+		@include media(">=desktop") {
+			display: block;
+		}
+	}
+}
+
+

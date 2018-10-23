@@ -1,0 +1,109 @@
+.footer{
+	padding: 15px 0;
+	background-color: $black;
+	color: $white;
+	@include media(">=desktop") {
+		padding: 27px 0 17px;
+	}
+	h6{
+		font-size: 14px;
+		text-transform: uppercase;
+		margin-bottom: 0;
+		letter-spacing: 0.1em;
+	}
+	.container{
+		@include media(">=phone") {
+			display: flex;
+			flex-wrap:wrap;
+			justify-content: space-between;
+		}
+	}
+	.navbar-brand{
+		@include media(">=desktop") {
+			max-width: 135px;
+		}
+	}
+}
+
+.footer-content{
+	padding: 17px 0 0;
+	.top{
+		@include media(">=tablet") {
+			display: flex;
+			align-items:center;
+			margin: 0 -15px;
+			margin-bottom: 26px;
+		}
+	}
+	.caption{
+		margin-bottom: 10px;
+		@include media(">=tablet") {
+			padding: 0 15px;
+			margin-right: 14px;
+		}
+		.h6{
+			font-size: 14px;
+			text-transform: uppercase;
+			margin-bottom: 0;
+			letter-spacing: 0.1em;
+		}
+		a{
+			text-decoration: none;
+			color: $white;
+			@include animate(color);
+			&:hover{
+				color: $yellow;
+			}
+		}
+	}
+	.social{
+		margin-bottom: 10px;
+		@include media(">=tablet") {
+			padding: 0 15px;
+		}
+	}
+}
+
+.social {
+	display: flex;
+	align-items: center;
+	@extend %listreset;
+	li {
+		list-style-type: none;
+		margin: 0 6px;
+		&:first-child{
+			margin-left: 0;
+		}
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+	a {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 10px;
+		color: $white;
+		text-decoration: none;
+		font-size: 15px;
+		line-height: 1;
+		border: 1px solid $white;
+		border-radius: 50%;
+		@include animate(color border-color);
+		&:hover{
+			color: $yellow;
+			border: 1px solid $yellow;
+		}
+	}
+}
+
+.copyright{
+	font-size: 14px;
+	color: $gold;
+	font-weight: $font-weight-normal;
+	display: inline-block;
+	width: 100%;
+	@include media(">=tablet") {
+		text-align: right;
+	}
+}
